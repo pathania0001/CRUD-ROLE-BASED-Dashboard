@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Oswald:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #000;
+    --color-primary-light: #F9F1E7;
+    --color-secondary-light: #D6E8F7;
+    --color-secondary: #EF601E;
+    --color-tertiary-light: #E8CACE;
+    --color-tertiary: #ecb035;
+    --color-fourth: #117FAA;
+    --color-text: #3d144b;
+    --color-desc: #7e7e7e;
+    --color-background: #f2f2f3;
+    --color-border: #ecf3fa;
+}
+
+* {
+    /* @apply m-0 p-0; */
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    @apply bg-[#59554E];
+    font-family: "Lexend", sans-serif !important;
+
+}
+
+.fc {
+    @apply h-auto;
+}
+
+.fc .fc-toolbar-title {
+    @apply text-base;
+}
+
+.fc .fc-button {
+    @apply text-xs capitalize p-2;
+}
+
+.fc .fc-button .fc-icon {
+    @apply text-xs;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    @apply mb-2
+}
+
+.css-13cymwt-control {
+    @apply !border-none outline-none shadow-none;
+}
+
+::-webkit-scrollbar {
+    @apply h-2 w-0;
+}
+
+/* ::-webkit-scrollbar-track {
+    @apply bg-background;
+} */
+/* 
+::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded border-4 border-border;
+
+} */
+
+.stack::-webkit-scrollbar {
+    @apply h-2 w-4;
+    /* ::-webkit-scrollbar {
+            @apply h-2 w-4;
+        } */
+}
+
+/* Loader dashboard wala */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cta-loader {
+    border-top-color: #3490dc;
+    animation: spin 1s linear infinite;
+}
+
+.special_col .input_box {
+    @apply xl:grid-cols-2;
+}
+
+.card .card-child {
+    @apply text-center
+}
