@@ -2,15 +2,14 @@ import { initializeApp } from "firebase/app";
 import { browserLocalPersistence, getAuth, setPersistence } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyDQaTn9IIC3uU8UablRt3cUhs3nZK5DJcY",
-  authDomain: "inlaid-booth-412703.firebaseapp.com",
-  projectId: "inlaid-booth-412703",
-  storageBucket: "inlaid-booth-412703.firebasestorage.app",
-  messagingSenderId: "67486826984",
-  appId: "1:67486826984:web:6a0b2974a3c310d6c5a45d",
-  measurementId: "G-5MG4QBD1TV"
+  apiKey: "AIzaSyD3lutZTve_vqBd57coUB84zad2nxnj27o",
+  authDomain: "role-based-crud-dashboard.firebaseapp.com",
+  projectId: "role-based-crud-dashboard",
+  storageBucket: "role-based-crud-dashboard.firebasestorage.app",
+  messagingSenderId: "203851871364",
+  appId: "1:203851871364:web:c8b4cbbf60c28d17547ed1",
+  measurementId: "G-RQSWHKQ721"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
